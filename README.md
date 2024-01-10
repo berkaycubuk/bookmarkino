@@ -10,12 +10,12 @@ To insert a new bookmark run `bookmarkino -i https://your-desired-bookmark-addre
 
 ## Roadmap
 With Bookmarkino I want to have minimum features and maximum usability.
-[ ] Delete bookmarks
-[ ] Grouping or foldering bookmarks
-[ ] Import bookmarks from Chrome and Firefox
-[ ] Self hostable server for sync
-[ ] Browser extension?
-[ ] Mobile app
+- [ ] Delete bookmarks
+- [ ] Grouping or foldering bookmarks
+- [ ] Import bookmarks from Chrome and Firefox
+- [ ] Self hostable server for sync
+- [ ] Browser extension?
+- [ ] Mobile app
 
 ## Contributing
 Feel free to play with it. There is no guideline available (yet) and Berkay may not accept your PR :^)
