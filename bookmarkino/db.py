@@ -3,8 +3,8 @@ from bookmarkino.bookmark import Bookmark
 
 class DB:
     connection = None
-    def connect(self):
-        self.connection = sqlite3.connect("bookmarkino.db")
+    def connect(self, db_file=None):
+        self.connection = sqlite3.connect("bookmarkino.db" if db_file == None else db_file)
 
     def sync_tables(self):
         cur = self.connection.cursor()

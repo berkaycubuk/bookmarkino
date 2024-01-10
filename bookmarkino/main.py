@@ -34,22 +34,19 @@ def main():
     for o, a in opts:
         if o in ("-v", "--version"):
             version()
-            return
         elif o in ("-h", "--help"):
             usage()
-            return
         elif o in ("-i", "--insert"):
             db.insert_bookmark(a)
             print("Bookmark {} inserted".format(a))
-            return
         elif o in ("-l", "--list"):
             bookmarks = db.fetch_bookmarks()
             for bookmark in bookmarks:
                 print("{}: {}".format(bookmark.id,bookmark.url))
-            return
 
+    if len(opts) == 0:
+        usage()
 
-    print(db.fetch_bookmarks())
 
     db.close()
 
